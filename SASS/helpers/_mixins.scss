@@ -1,0 +1,15 @@
+@mixin flex-properties{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin line($bottom){
+  position: absolute;
+  content: "";
+  height: $height-40;
+  width: $width-1;
+  right: -$font-size-35;
+  bottom: $bottom;
+  background-color: $light-gray;
+}

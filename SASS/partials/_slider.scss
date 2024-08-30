@@ -1,0 +1,75 @@
+#slider-section{
+  .slider-area{
+    .slider-image{
+      position: relative;
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: $height-650;
+      }
+    }
+    .slider-center-wrapper{
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: $white;
+      h3{
+        font-size: $font-size-150;
+        font-weight: 200;
+        text-transform: capitalize;
+        font-style: italic;
+      }
+      p{
+        font-size: $font-size-20;
+      }
+      button{
+        font-weight: bold;
+        padding: 20px 40px;
+        border: none;
+        border-radius: $border-radius-5;
+        background-color: $green;
+        color: $white;
+        font-size: $font-size-17;
+        margin-top: $margin-top-60;
+      }
+    }
+    .where-to-go-area{
+      background-color: navy;
+      height: $height-150;
+      @include flex-properties;  
+      margin-top: -$margin-10;
+      .container{
+        width: 100%;
+        margin: 0 auto;
+        h3{
+          font-size: $font-size-25;
+          display: inline;
+          margin-right: $margin-40;
+          color: white;
+        }
+
+        input{
+          height: $height-50;
+          width: $width-190;
+          font-size: $font-size-17;
+          border-radius: $border-radius-5;
+          padding: 0 $p-10;
+          background-color: navy;
+          border: 0.5px solid $light-gray;
+          margin-right: $margin-10;
+        }
+
+        button{
+          padding: 15px 50px;
+          border-radius: 5px;
+          border: none;
+          background-color: $red;
+          font-weight: bold;
+          font-size: $font-size-17;
+          color: $white;
+        }
+      }
+    }
+  }}
